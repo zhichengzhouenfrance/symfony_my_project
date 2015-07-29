@@ -9,13 +9,13 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/page/{page_number}",requirements={"page_number"="\d+"})
+     * @Route("/login")
      * @Template()
      */
-    public function indexAction($page_number)
+    public function indexAction()
     {
         $content = "test";
 
-        return array('page_number' => $page_number);
+        return array('content' => $content);
     }
 }

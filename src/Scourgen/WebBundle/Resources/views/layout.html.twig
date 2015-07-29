@@ -9,54 +9,40 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="{{ asset('bundles/scourgenweb/css/bootstrap.min.css')}}">
-    <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-    </style>
-    <link rel="stylesheet" href="{{ asset('bundles/scourgenweb/css/bootstrap-theme.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('bundles/scourgenweb/css/main.css')}}">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <script src="{{ asset('bundles/scourgenweb/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')}}"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    {% block my_css %}
-    {% endblock %}
-    {% block my_js %}
-    {% endblock %}
 </head>
 <body>
 {% block head %}
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
+    <div class="container" style="padding-top : 30px">
+        <div class="row">
+            <div class="span3">
+                <img src="{{ asset('bundles/scourgenweb/images/kaercher_logo.png')}}">
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <div class="form-group">
-                    <input type="text" placeholder="Email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <input type="password" placeholder="Password" class="form-control">
-                </div>
-                <button type="submit" class="btn btn-success">Sign in</button>
-            </form>
-        </div><!--/.navbar-collapse -->
     </div>
-</nav>
+
+    <div style="background :#ffed00 ; height : 120px; margin-top : 20px">
+        <div class="container">
+            <div class="row">
+                <h1 style="    font-size: 30px;
+	    text-transform: uppercase;
+	    margin: 0px 0px 18px 0px;
+	    font-weight: 900 !important; padding-top:25px">Professional</h1>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 10px;"></div>
 {% endblock %}
 {% block content %}
 <!-- Main jumbotron for a primary marketing message or call to action -->
